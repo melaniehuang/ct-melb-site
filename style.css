@@ -1,0 +1,171 @@
+html, body { 
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+} 
+
+body {
+  background:#000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 28px;
+}
+
+a {
+  color:#fff;
+}
+
+a:visted {
+  color:#e0e0e0;
+}
+
+#info {
+  max-width: 400px;
+  float:right;
+  padding-left:16px;
+  padding-right:64px;
+}
+
+#chips {
+  float:left;
+  width:420px;
+  margin:32px;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Share Tech Mono', sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+h1 {
+  margin-top:128px;
+  font-size: 32px;
+  line-height: 40px;
+  width:30%;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+section {
+  margin-bottom:160px;
+}
+
+header {
+  margin-bottom:160px;
+}
+
+header img {
+  width: 120px;
+  position: relative;
+  top:10px;
+  padding-left:8px;
+}
+
+.chipHeading {
+  position: relative;
+  top:5px;
+}
+
+#eventDescription {
+  margin-bottom:48px;
+}
+
+.eventButton {
+  font-family: 'Share Tech Mono', sans-serif;
+  border: 2px solid white;
+  padding:16px 32px;
+  text-decoration: none;
+  color:#fff;
+}
+
+#eventAbout {
+  float:left;
+  display:block;
+  padding: 16px 32px;
+  background-color: #191919;
+  margin-top: 48px;
+  margin-bottom: 128px;
+  font-size: 12px;
+  line-height:20px;
+}
+
+.fa-long-arrow-right {
+  padding-left:32px;
+}
+
+.fa-fw {
+  padding-right:16px;
+}
+
+#profiles {
+  display:block;
+  float:left;
+  margin-top:32px;
+}
+
+#profiles p {
+  display:block;
+  float:left;
+}
+
+.profile {
+  float:left;
+  padding-right:32px;
+}
+
+.profile h3 {
+  text-align: center;
+}
+
+.joinUs {
+  margin-bottom:32px;
+  margin-left:16px;
+}
+
+.joinUs a {
+  color:#fff;
+}
+
+.org {
+  width:90%;
+  margin-top:20px;
+  font-size:12px;
+  line-height:20px;
+}
+
+.org img {
+  margin-top:48px;
+  width:120px;
+}
+
+.pastProject {
+  margin-top:32px;
+  margin-left:16px;
+  font-size:12px;
+  line-height:20px;
+}
+
+.pastProject a {
+  color: #fff;
+}
+
+.pastProject h3 {
+  font-size:24px;
+  margin-bottom:8px;
+}
+
+.eventProject {
+  margin-left:0px;
+  margin-bottom:32px;
+}
