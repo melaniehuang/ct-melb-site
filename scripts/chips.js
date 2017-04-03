@@ -34,8 +34,6 @@ function setup(){
   }
   
   shuffle(initials, true);
-  // console.log(numMembers +", "+ numRows +", "+ remainder); 
-  // console.log(initials);
   for (var p = 0; p < 2; p++){
     bx[p] = int(random(0,16));
     bx[p+2] = int(random(16,25));
@@ -237,3 +235,37 @@ function drawBlack(sx,sy){
   fill("#000000");
   rect(sx, sy, 2,2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Chip {
+//   var pos;
+//   var borderStyle = [];
+//   for (var b = 0; b < 2; b++){
+//     borderStyle[b] = int(random(0,16));
+//     borderStyle[b+2] = int(random(16,25));
+//     borderStyle[b+4] = int(random(25,41));
+//     borderStyle[b+6] =  int(random(41,50));
+//   }
+  
+//   Chip(){
+//     pos = createVector(x,y);
+//   }
+
+
+//   //position x, y
+//   //random border sequence
+//   //black squares
+//   //get initials next in sequence
+// }
