@@ -29,13 +29,14 @@ a:visted {
   max-width: 400px;
   float:right;
   padding-left:16px;
-  padding-right:64px;
+  padding-right:270px;
 }
 
 #chips {
   float:left;
   width:420px;
   margin:32px;
+  padding:64px;
 }
 
 h1,h2,h3,h4 {
@@ -65,6 +66,7 @@ h3 {
 h4 {
   font-size: 20px;
   line-height: 28px;
+  margin:0;
 }
 
 section {
@@ -86,10 +88,6 @@ header img {
 .chipHeading {
   position: relative;
   top:5px;
-}
-
-#eventDescription {
-  margin-bottom:48px;
 }
 
 .fa-long-arrow-right {
@@ -122,7 +120,6 @@ header img {
 
 .joinUs {
   margin-bottom:32px;
-  margin-left:16px;
 }
 
 .joinUs a {
@@ -137,6 +134,26 @@ header img {
 .org img {
   margin-top:48px;
   width:120px;
+}
+
+.event {
+  margin-bottom: 48px;
+}
+
+.event h3 {
+  text-transform: uppercase;
+}
+
+.eventProject {
+  margin-bottom: 24px;
+}
+
+.eventProject h4 {
+  text-transform: uppercase;
+} 
+
+#meetupInfo {
+  display: none;
 }
 
 .pastProject {

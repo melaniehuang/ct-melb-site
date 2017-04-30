@@ -1,0 +1,35 @@
+{	
+	"events": [{	
+		"title": "Creative Tech Meetup",
+		"eventLink": "https://www.facebook.com/events/275041166287666/",
+		"timedate": "04 MAY, 7PM",
+		"location": "Youth Projects",
+		"description": "This month we have a fun one for you, we are looking at 'Audio Visualization'.",
+		"projects": [{ 	
+					"projectTitle": "Audio Project", 
+					"projectLink" : "", 
+					"speaker" : "Peter Walker", 
+					"speakerLink" : "http://chrisvik.com/"
+				}, { 
+					"projectTitle": "Audio Visualisation Project", 
+					"projectLink" : "", 
+					"speaker" : "Chris Vik", 
+					"speakerLink" : "http://chrisvik.com/"
+				}],
+		"meetup": "true"
+	    }
+	],
+
+	"pastProjects": [{
+		"project": "LUMES", 
+		"projectLink" : "http://lumes.net/", 
+		"speaker" : "ENESS(Nimrod Weiss)", 
+		"speakerLink" : "http://eness.com/"
+	},{
+		"project": "Arcade DIY Dance Machine", 
+		"projectLink" : "https://github.com/melaniehuang/dancedancerevolution", 
+		"speaker" : "Mel Huang", 
+		"speakerLink" : "http://melaniehuang.com/"
+	}]
+}
+

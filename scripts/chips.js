@@ -8,9 +8,10 @@ var chipFont;
 var bx = [0,1,16,18,25,29,45,47];
 
 function preload() {
-  var request = "/data/members.json";
-  membersList = loadJSON(request); 
-  chipFont = loadFont("data/creativetech.ttf");
+  var membersRequest = "/data/members.json";
+  membersList = loadJSON(membersRequest); 
+
+  chipFont = loadFont("/data/creativetech.ttf");
 }
 
 function setup(){
@@ -246,26 +247,3 @@ function drawBlack(sx,sy){
 
 
 
-
-
-
-// class Chip {
-//   var pos;
-//   var borderStyle = [];
-//   for (var b = 0; b < 2; b++){
-//     borderStyle[b] = int(random(0,16));
-//     borderStyle[b+2] = int(random(16,25));
-//     borderStyle[b+4] = int(random(25,41));
-//     borderStyle[b+6] =  int(random(41,50));
-//   }
-  
-//   Chip(){
-//     pos = createVector(x,y);
-//   }
-
-
-//   //position x, y
-//   //random border sequence
-//   //black squares
-//   //get initials next in sequence
-// }
