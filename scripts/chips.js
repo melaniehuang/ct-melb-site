@@ -8,6 +8,9 @@ var chipFont;
 var bx = [0,1,16,18,25,29,45,47];
 
 function preload() {
+  var contentRequest = "/data/content.json";
+  content = loadJSON(contentRequest);
+
   var membersRequest = "/data/members.json";
   membersList = loadJSON(membersRequest); 
 
@@ -15,6 +18,7 @@ function preload() {
 }
 
 function setup(){
+  getEventContent();
   var canvas = createCanvas(450,2000);
   canvas.parent("chips");
   noLoop();
@@ -237,6 +241,52 @@ function drawBlack(sx,sy){
   rect(sx, sy, 2,2);
 }
 
+
+function getEventContent(){
+  if (content.events.length > 0){
+    for (var e = 0; e < content.events.length; e++){
+      var event = content.events[e];
+      var description = event.description;
+
+      var eventDiv = createDiv("");  
+      eventDiv.class("event");
+      eventDiv.parent("events");
+
+      var eventTitle = createElement("h3", "<a href=" + event.eventLink + " target='_blank'> " + event.title + "</br>" + event.timedate + " @ " + event.location + "</a>");
+      eventTitle.class("eventTitle"); 
+      eventTitle.parent(eventDiv);
+
+      var eventDescription = createP(event.description);
+      eventTitle.class("eventInfo"); 
+      eventDescription.parent(eventDiv);
+      
+      for (var p = 0; p < content.events[e].projects.length; p++){
+        var project = content.events[e].projects[p];
+
+        var projectListing = createElement("div", "<h4><a href =" + project.projectLink + " target='_blank'> " + project.projectTitle + "</a></h4>By <a href=" + project.speakerLink + ">" + project.speaker + "</a>" );
+        projectListing.class("eventProject");
+        projectListing.parent(eventDiv);
+      }
+
+      if (event.meetup === "true"){
+        var meetupSummary = createP(event.meetupInfo);
+        meetupSummary.class("eventInfo");
+        meetupSummary.parent(eventDiv);
+      }
+    }
+  } else {
+    var noEvent = createDiv("More events coming soon. </br>For other related events and inspiration around Melbourne, stay up to date on our <a href = 'https://www.facebook.com/groups/1542924152702740/' target='_blank'>Facebook</a> page."); 
+    noEvent.parent("events"); 
+  }
+
+  //Past Projects
+  for (var p = 0; p < content.pastProjects.length; p++){
+    var pastSpeaker = content.pastProjects[p];
+    var pastListing = createElement("div", "<h4><a href =" + pastSpeaker.projectLink + " target='_blank'> " + pastSpeaker.project + "</a></h4>By <a href=" + pastSpeaker.speakerLink + ">" + pastSpeaker.speaker + "</a>" );
+    pastListing.class("pastProject");
+    pastListing.parent("projects");
+  }
+}
 
 
 

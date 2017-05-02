@@ -6,30 +6,53 @@
 		"location": "Youth Projects",
 		"description": "This month we have a fun one for you, we are looking at 'Audio Visualization'.",
 		"projects": [{ 	
-					"projectTitle": "Audio Project", 
+					"projectTitle": "Audio Visualisation", 
+					"projectLink" : "", 
+					"speaker" : "Dr Joshua Batty", 
+					"speakerLink" : ""
+				}, { 
+					"projectTitle": "Audio Visualisation", 
 					"projectLink" : "", 
 					"speaker" : "Peter Walker", 
-					"speakerLink" : "http://chrisvik.com/"
+					"speakerLink" : "https://vimeo.com/vjasterix"
 				}, { 
-					"projectTitle": "Audio Visualisation Project", 
+					"projectTitle": "Audio Visualisation", 
 					"projectLink" : "", 
 					"speaker" : "Chris Vik", 
 					"speakerLink" : "http://chrisvik.com/"
 				}],
-		"meetup": "true"
-	    }
+		"meetup": "true",
+		"meetupInfo": "Creative Tech meetups run every second month on the first Thurs :) Projects are presented, followed by beer, wine, pizzas and an open demo session. Keep the <a href='/files/YouthProjects-donations.pdf' target='_blank'>non-perishables</a> and headphones coming. Anything you can spare will help the greater community of Melbourne who are going through some tough times."
+	  }
 	],
 
 	"pastProjects": [{
 		"project": "LUMES", 
 		"projectLink" : "http://lumes.net/", 
-		"speaker" : "ENESS(Nimrod Weiss)", 
+		"speaker" : "ENESS (Nimrod Weiss)",  
 		"speakerLink" : "http://eness.com/"
 	},{
 		"project": "Arcade DIY Dance Machine", 
 		"projectLink" : "https://github.com/melaniehuang/dancedancerevolution", 
 		"speaker" : "Mel Huang", 
 		"speakerLink" : "http://melaniehuang.com/"
+	},{
+		"project": "Recalling Terrance", 
+		"projectLink" : "https://youtu.be/FXQd2Zzkwao", 
+		"speaker" : "Roger Anthony Essig", 
+		"speakerLink" : "http://www.rogeranthonyessig.com/"
+	},{
+		"project": "NouseAutres", 
+		"projectLink" : "http://www.donnachie-simionato.com/karenann/", 
+		"speaker" : "Karen Ann Donnachie", 
+		"speakerLink" : "http://www.donnachie-simionato.com/karenann/"
+	},{
+		"project": "Wearables", 
+		"projectLink" : "", 
+		"speaker" : "Danni", 
+		"speakerLink" : ""
 	}]
 }
+
+
 

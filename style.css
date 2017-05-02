@@ -152,10 +152,6 @@ header img {
   text-transform: uppercase;
 } 
 
-#meetupInfo {
-  display: none;
-}
-
 .pastProject {
   margin-top:42px;
   font-size:16px;
@@ -173,4 +169,5 @@ header img {
 
 .pastProject h4 {
   margin-bottom:4px;
+  text-transform: uppercase;
 }
