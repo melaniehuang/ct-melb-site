@@ -262,8 +262,22 @@ function getEventContent(){
       
       for (var p = 0; p < content.events[e].projects.length; p++){
         var project = content.events[e].projects[p];
+        var pLink = project.projectLink;
+        var sLink = project.speakerLink;
 
-        var projectListing = createElement("div", "<h4><a href =" + project.projectLink + " target='_blank'> " + project.projectTitle + "</a></h4>By <a href=" + project.speakerLink + ">" + project.speaker + "</a>" );
+        if (pLink === ""){
+          pLink = "";
+        } else {
+          pLink = "<a href =" + project.projectLink + " target='_blank'>";
+        }
+
+        if (sLink === ""){
+          sLink = "";
+        } else {
+          sLink = "<a href =" + project.speakerLink + " target='_blank'>";
+        }
+
+        var projectListing = createElement("div", "<h4>" + pLink + project.projectTitle + "</a></h4>By " + sLink + project.speaker + "</a>" );
         projectListing.class("eventProject");
         projectListing.parent(eventDiv);
       }
